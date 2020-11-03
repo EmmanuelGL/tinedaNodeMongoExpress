@@ -1,0 +1,17 @@
+<section class="container">
+    <div class="row " id="mostrarProductos">
+        <div class="col-4">
+            <div class="card mt-5 thumb">
+                <a href="${productos[i].imagen}">
+                    <img class="lupa img-thumbnail" src="${productos[i].imagen}" class="card-img-top" alt="">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">${productos[i].nombre}</h5>
+                    <p class="card-text">${productos[i].descripcion}</p>
+                    <h4 class="card-text text-primary text-center mb-3">$${productos[i].precio}</h4>
+                    <button type="button" onclick="carrito(${i})" class="btn btn-primary col-12">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
